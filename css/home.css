@@ -140,7 +140,7 @@ header nav .menu .mobile .menu-container .call-to-action {
   background-color: #BA4270;
   padding: 16px 32px;
   border-radius: 24px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   font-family: "Public Sans", sans-serif;
   color: #FBFCFE;
@@ -223,6 +223,83 @@ header section article p a {
 }
 header section article p a:hover {
   color: #36536B;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-size: 949px;
+    background-position: center -663px;
+  }
+  header nav {
+    margin-bottom: 8px;
+  }
+  header nav .menu .mobile {
+    display: none;
+  }
+  header nav .menu .desktop {
+    display: flex;
+    align-items: center;
+    margin-left: 64px;
+  }
+  header nav .menu .desktop ul {
+    display: flex;
+    margin-right: 84px;
+  }
+  header nav .menu .desktop ul li {
+    margin-right: 40px;
+  }
+  header nav .menu .desktop ul li:last-child {
+    margin-right: 0;
+  }
+  header nav .menu .desktop ul li a {
+    font-family: "Public Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #657c8f;
+  }
+  header nav .menu .desktop ul li a:hover {
+    color: #36536B;
+  }
+  header nav .menu .desktop .call-to-action {
+    background-color: #BA4270;
+    padding: 16px 24px;
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Public Sans", sans-serif;
+    color: #FBFCFE;
+  }
+  header nav .menu .desktop .call-to-action:hover {
+    background-color: #DA6D97;
+  }
+  header section {
+    max-width: 507px;
+  }
+  header section .image img {
+    --width: 253.83px;
+  }
+  header section article h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  header section article form {
+    flex-direction: row;
+  }
+  header section article form .item {
+    margin: 0;
+  }
+  header section article form .item:first-child {
+    margin-left: 20px;
+  }
+  header section article form .item:first-child input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  header section article form .item:last-child {
+    margin-left: -20px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
