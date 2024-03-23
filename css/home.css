@@ -301,5 +301,49 @@ header section article p a:hover {
     margin-left: -20px;
   }
 }
+@media (min-width: 1440px) {
+  header {
+    padding: 40px 0 0 0;
+    background-size: 780px;
+    background-position: 800px -172px;
+  }
+  header > * {
+    width: 1110px;
+    margin: 0 auto;
+  }
+  header nav {
+    margin-bottom: 0;
+  }
+  header nav .menu {
+    flex-grow: 1;
+  }
+  header nav .menu .desktop {
+    justify-content: space-between;
+  }
+  header section {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+  }
+  header section .image img {
+    --width: 420px;
+  }
+  header section article {
+    max-width: 546px;
+    text-align: start;
+  }
+  header section article h1 {
+    font-size: 72px;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+  header section article form .item:first-of-type {
+    margin-left: 0;
+  }
+  header section article p {
+    margin-left: 20px;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

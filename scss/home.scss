@@ -253,3 +253,54 @@ header {
         }
     }
 }
+
+@media (min-width: 1440px) {
+    header {
+        padding: 40px 0 0 0;
+        background-size: 780px;
+        background-position: 800px -172px;
+        > * {
+            width: 1110px;
+            margin: 0 auto;
+        }
+        nav {
+            margin-bottom: 0;
+            .menu {
+                flex-grow: 1;
+                .desktop {
+                    justify-content: space-between;
+                }
+            }
+        }
+        section {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            max-width: none;
+            .image {
+                img {
+                    --width: 420px;
+                }
+            }
+            article {
+                max-width: 546px;
+                text-align: start;
+                h1 {
+                    font-size: 72px;
+                    line-height: 72px;
+                    margin-bottom: 32px;
+                }
+                form {
+                    .item {
+                        &:first-of-type {
+                            margin-left: 0;
+                        }
+                    }
+                }
+                p {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
