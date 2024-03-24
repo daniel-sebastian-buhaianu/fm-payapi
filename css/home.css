@@ -153,42 +153,42 @@ header nav .menu .mobile .menu-container .call-to-action:hover {
 header nav .menu .desktop {
   display: none;
 }
-header section {
+header article {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
 }
-header section .image {
+header article .image {
   text-align: center;
 }
-header section .image img {
+header article .image img {
   --width: 204.34px;
   position: relative;
   width: var(--width);
   left: calc(var(--width) * 0.06);
 }
-header section article {
+header article section {
   margin-top: -24px;
   text-align: center;
 }
-header section article h1 {
+header article section h1 {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
   line-height: 36px;
   color: #36536B;
   margin-bottom: 24px;
 }
-header section article form {
+header article section form {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
 }
-header section article form label {
+header article section form label {
   position: absolute;
   left: -100vw;
 }
-header section article form input {
+header article section form input {
   width: 100%;
   padding: 16px 32px;
   border-radius: 24px;
@@ -199,46 +199,46 @@ header section article form input {
   color: #36536B;
   cursor: pointer;
 }
-header section article form input[type=submit] {
+header article section form input[type=submit] {
   box-shadow: none;
   background-color: #BA4270;
   color: #FBFCFE;
 }
-header section article form input[type=submit]:hover {
+header article section form input[type=submit]:hover {
   background-color: #DA6D97;
 }
-header section article form .item {
+header article section form .item {
   margin-bottom: 16px;
 }
-header section article form .item:last-child {
+header article section form .item:last-child {
   margin-bottom: 0;
 }
-header section article p {
+header article section p {
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
   color: #6C8294;
 }
-header section article p a {
+header article section p a {
   font-weight: bold;
   color: #6C8294;
 }
-header section article p a:hover {
+header article section p a:hover {
   color: #36536B;
 }
 
-main section {
+#clients {
   padding: 80px 24px;
   background-color: #1B262F;
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
   background-position: center -602px;
   background-repeat: no-repeat;
 }
-main section > * {
+#clients > * {
   max-width: 367px;
   margin-left: auto;
   margin-right: auto;
 }
-main section div {
+#clients div {
   padding-left: 24px;
   padding-right: 24px;
   display: grid;
@@ -247,28 +247,28 @@ main section div {
   gap: 40px;
   margin-bottom: 56px;
 }
-main section div svg {
+#clients div svg {
   width: 100%;
   height: auto;
 }
-main section article {
+#clients section {
   text-align: center;
 }
-main section article h1 {
+#clients section h1 {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
   line-height: 36px;
   color: #FBFCFE;
   margin-bottom: 16px;
 }
-main section article p {
+#clients section p {
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
   line-height: 28px;
   color: #b8bcc0;
   margin-bottom: 32px;
 }
-main section article a {
+#clients section a {
   display: inline-block;
   color: #FBFCFE;
   font-family: "Public Sans", sans-serif;
@@ -278,9 +278,34 @@ main section article a {
   border: 1px solid #FBFCFE;
   border-radius: 24px;
 }
-main section article a:hover {
+#clients section a:hover {
   background-color: #FBFCFE;
   color: #1B262F;
+}
+
+#benefits article {
+  max-width: 375px;
+  margin: 0 auto 80px auto;
+}
+#benefits article img {
+  width: 410px;
+}
+#benefits article section {
+  padding: 0 24px;
+  text-align: center;
+}
+#benefits article section h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #36536B;
+  margin-bottom: 24px;
+}
+#benefits article section p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
 }
 
 @media (min-width: 768px) {
@@ -332,53 +357,70 @@ main section article a:hover {
   header nav .menu .desktop .call-to-action:hover {
     background-color: #DA6D97;
   }
-  header section {
+  header article {
     max-width: 507px;
   }
-  header section .image img {
+  header article .image img {
     --width: 253.83px;
   }
-  header section article h1 {
+  header article section h1 {
     font-size: 48px;
     line-height: 56px;
   }
-  header section article form {
+  header article section form {
     flex-direction: row;
   }
-  header section article form .item {
+  header article section form .item {
     margin: 0;
   }
-  header section article form .item:first-child {
+  header article section form .item:first-child {
     margin-left: 20px;
   }
-  header section article form .item:first-child input {
+  header article section form .item:first-child input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  header section article form .item:last-child {
+  header article section form .item:last-child {
     margin-left: -20px;
   }
-  main section {
+  #clients {
     padding: 88px 116px;
     background-position: center -548px;
   }
-  main section > * {
+  #clients > * {
     max-width: 536px;
   }
-  main section div {
+  #clients div {
     padding-left: 0;
     padding-right: 0;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 64px;
   }
-  main section div svg {
+  #clients div svg {
     width: auto;
     margin: auto;
   }
-  main section article h1 {
+  #clients section h1 {
     font-size: 48px;
     line-height: 56px;
     margin-bottom: 24px;
+  }
+  #benefits {
+    padding-top: 40px;
+  }
+  #benefits article {
+    max-width: 573px;
+  }
+  #benefits article img {
+    width: 610px;
+  }
+  #benefits article section {
+    margin-top: -48px;
+    padding: 0;
+  }
+  #benefits article section h1 {
+    font-size: 48px;
+    line-height: 56px;
   }
 }
 @media (min-width: 1440px) {
@@ -400,31 +442,31 @@ main section article a:hover {
   header nav .menu .desktop {
     justify-content: space-between;
   }
-  header section {
+  header article {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     max-width: none;
   }
-  header section .image img {
+  header article .image img {
     --width: 420px;
   }
-  header section article {
+  header article section {
     max-width: 546px;
     text-align: start;
   }
-  header section article h1 {
+  header article section h1 {
     font-size: 72px;
     line-height: 72px;
     margin-bottom: 32px;
   }
-  header section article form .item:first-of-type {
+  header article section form .item:first-of-type {
     margin-left: 0;
   }
-  header section article p {
+  header article section p {
     margin-left: 20px;
   }
-  main section {
+  #clients {
     background-position: -235px -359px;
     padding: 100px 165px;
     display: flex;
@@ -432,11 +474,11 @@ main section article a:hover {
     justify-content: center;
     align-items: center;
   }
-  main section div {
+  #clients div {
     margin: 0;
     height: 103px;
   }
-  main section article {
+  #clients section {
     margin: 0 48px 0 0;
     text-align: start;
   }
