@@ -448,4 +448,16 @@ header {
             text-align: start;
         }
     }
+
+    #benefits {
+        article {
+            max-width: 1015px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            section {
+                text-align: start;
+            }
+        }
+    }
 }

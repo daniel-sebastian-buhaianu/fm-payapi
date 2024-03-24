@@ -482,6 +482,15 @@ header article section p a:hover {
     margin: 0 48px 0 0;
     text-align: start;
   }
+  #benefits article {
+    max-width: 1015px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #benefits article section {
+    text-align: start;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
