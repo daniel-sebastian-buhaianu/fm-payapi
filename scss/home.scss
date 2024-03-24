@@ -176,6 +176,14 @@ main {
     section {
         padding: 80px 24px;
         background-color: #1B262F;
+        background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
+        background-position: center -602px;
+        background-repeat: no-repeat;
+        > * {
+            max-width: 367px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         div {
             padding-left: 24px;
             padding-right: 24px;
@@ -304,6 +312,32 @@ main {
             }
         }
     }
+    main {
+        section {
+            padding: 88px 116px;
+            background-position: center -548px;
+            > * {
+                max-width: 536px;
+            }
+            div {
+                padding-left: 0;
+                padding-right: 0;
+                grid-template-columns: repeat(3, 1fr);
+                margin-bottom: 64px;
+                svg {
+                    width: auto;
+                    margin: auto;
+                }
+            }
+            article {
+                h1 {
+                    font-size: 48px;
+                    line-height: 56px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1440px) {
@@ -352,6 +386,24 @@ main {
                 p {
                     margin-left: 20px;
                 }
+            }
+        }
+    }
+    main {
+        section {
+            background-position: -235px -359px;
+            padding: 100px 165px;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            div {
+                margin: 0;
+                height: 103px;
+            }
+            article {
+                margin: 0 48px 0 0;
+                text-align: start;
             }
         }
     }

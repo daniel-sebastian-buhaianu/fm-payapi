@@ -229,6 +229,14 @@ header section article p a:hover {
 main section {
   padding: 80px 24px;
   background-color: #1B262F;
+  background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
+  background-position: center -602px;
+  background-repeat: no-repeat;
+}
+main section > * {
+  max-width: 367px;
+  margin-left: auto;
+  margin-right: auto;
 }
 main section div {
   padding-left: 24px;
@@ -350,6 +358,28 @@ main section article a:hover {
   header section article form .item:last-child {
     margin-left: -20px;
   }
+  main section {
+    padding: 88px 116px;
+    background-position: center -548px;
+  }
+  main section > * {
+    max-width: 536px;
+  }
+  main section div {
+    padding-left: 0;
+    padding-right: 0;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 64px;
+  }
+  main section div svg {
+    width: auto;
+    margin: auto;
+  }
+  main section article h1 {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 24px;
+  }
 }
 @media (min-width: 1440px) {
   header {
@@ -393,6 +423,22 @@ main section article a:hover {
   }
   header section article p {
     margin-left: 20px;
+  }
+  main section {
+    background-position: -235px -359px;
+    padding: 100px 165px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  main section div {
+    margin: 0;
+    height: 103px;
+  }
+  main section article {
+    margin: 0 48px 0 0;
+    text-align: start;
   }
 }
 
