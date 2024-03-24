@@ -73,6 +73,7 @@ header {
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: center -550px;
+  margin-bottom: 80px;
 }
 header nav {
   display: flex;
@@ -223,6 +224,55 @@ header section article p a {
 }
 header section article p a:hover {
   color: #36536B;
+}
+
+main section {
+  padding: 80px 24px;
+  background-color: #1B262F;
+}
+main section div {
+  padding-left: 24px;
+  padding-right: 24px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 56px;
+}
+main section div svg {
+  width: 100%;
+  height: auto;
+}
+main section article {
+  text-align: center;
+}
+main section article h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 32px;
+  line-height: 36px;
+  color: #FBFCFE;
+  margin-bottom: 16px;
+}
+main section article p {
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  color: #b8bcc0;
+  margin-bottom: 32px;
+}
+main section article a {
+  display: inline-block;
+  color: #FBFCFE;
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 16px 32px;
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+}
+main section article a:hover {
+  background-color: #FBFCFE;
+  color: #1B262F;
 }
 
 @media (min-width: 768px) {

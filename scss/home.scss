@@ -13,6 +13,7 @@ header {
     background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
     background-repeat: no-repeat;
     background-position: center -550px;
+    margin-bottom: 80px;
     nav {
         display: flex;
         justify-content: space-between;
@@ -165,6 +166,57 @@ header {
                     &:hover {
                         color: #36536B;
                     }
+                }
+            }
+        }
+    }
+}
+
+main {
+    section {
+        padding: 80px 24px;
+        background-color: #1B262F;
+        div {
+            padding-left: 24px;
+            padding-right: 24px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-bottom: 56px;
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+        article {
+            text-align: center;
+            h1 {
+                font-family: 'DM Serif Display', serif;
+                font-size: 32px;
+                line-height: 36px;
+                color: #FBFCFE;
+                margin-bottom: 16px;
+            }
+            p {
+                font-family: 'Public Sans', sans-serif;
+                font-size: 15px;
+                line-height: 28px;
+                color: #b8bcc0;
+                margin-bottom: 32px;
+            }
+            a {
+                display: inline-block;
+                color: #FBFCFE;
+                font-family: 'Public Sans', sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                padding: 16px 32px;
+                border: 1px solid #FBFCFE;
+                border-radius: 24px;
+                &:hover {
+                    background-color: #FBFCFE;
+                    color: #1B262F;
                 }
             }
         }
