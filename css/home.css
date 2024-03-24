@@ -285,7 +285,7 @@ header article section p a:hover {
 
 #benefits article {
   max-width: 375px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto 48px auto;
 }
 #benefits article img {
   width: 410px;
@@ -487,6 +487,15 @@ header article section p a:hover {
     display: flex;
     align-items: center;
     margin-bottom: 0;
+  }
+  #benefits article:nth-child(2) {
+    flex-direction: row-reverse;
+    position: relative;
+    left: 48px;
+  }
+  #benefits article:nth-child(2) img {
+    position: relative;
+    left: 90px;
   }
   #benefits article section {
     text-align: start;

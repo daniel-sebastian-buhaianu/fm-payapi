@@ -232,7 +232,7 @@ header {
 #benefits {
     article {
         max-width: 375px;
-        margin: 0 auto 80px auto;
+        margin: 0 auto 48px auto;
         img {
             width: 410px;
         }
@@ -455,6 +455,15 @@ header {
             display: flex;
             align-items: center;
             margin-bottom: 0;
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                position: relative;
+                left: 48px;
+                img {
+                    position: relative;
+                    left: 90px;
+                }
+            }
             section {
                 text-align: start;
             }
