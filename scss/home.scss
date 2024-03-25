@@ -233,6 +233,28 @@ header {
     article {
         max-width: 375px;
         margin: 0 auto 48px auto;
+        &:last-child {
+            display: flex;
+            flex-direction: column;
+            padding-top: 32px;
+            section {
+                margin-bottom: 48px;
+                img {
+                    width: auto;
+                    margin-bottom: 32px;
+                }
+                h1 {
+                    font-family: 'Public Sans', sans-serif;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 25px;
+                    margin-bottom: 16px;
+                }
+                p {
+                    line-height: 25px;
+                }
+            }
+        }
         img {
             width: 410px;
         }
@@ -367,6 +389,18 @@ header {
         padding-top: 40px;
         article {
             max-width: 573px;
+            &:last-child {
+                max-width: 989px;
+                flex-direction: row;
+                padding: 40px;
+                margin-bottom: 0;
+                section {
+                    margin: 0 10px 0 0;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
             img {
                 width: 610px;
             }
@@ -462,6 +496,18 @@ header {
                 img {
                     position: relative;
                     left: 90px;
+                }
+            }
+            &:last-child {
+                align-items: start;
+                padding-left: 0;
+                padding-right: 0;
+                max-width: 1178px;
+                justify-content: space-between;
+                section {
+                    text-align: center;
+                    max-width: 350px;
+                    margin-right: 0;
                 }
             }
             section {
