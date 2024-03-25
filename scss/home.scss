@@ -233,7 +233,7 @@ header {
     article {
         max-width: 375px;
         margin: 0 auto 48px auto;
-        &:last-child {
+        &:nth-child(3) {
             display: flex;
             flex-direction: column;
             padding-top: 32px;
@@ -252,6 +252,50 @@ header {
                 }
                 p {
                     line-height: 25px;
+                }
+            }
+        }
+        &:last-child {
+            section {
+                h1 {
+                    font-family: 'DM Serif Display', serif;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #36536B;
+                    margin-bottom: 32px;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        position: absolute;
+                        left: -100vw;
+                    }
+                    input {
+                        width: 100%;
+                        padding: 16px 32px;
+                        border-radius: 24px;
+                        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+                        font-family: 'Public Sans', sans-serif;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: #36536B;
+                        cursor: pointer;
+                        &[type="submit"] {
+                            box-shadow: none;
+                            background-color: #BA4270;
+                            color: #FBFCFE;
+                            &:hover {
+                                background-color: #DA6D97;
+                            }
+                        }
+                    }
+                    .item {
+                        margin-bottom: 16px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
         }
@@ -389,7 +433,7 @@ header {
         padding-top: 40px;
         article {
             max-width: 573px;
-            &:last-child {
+            &:nth-child(3) {
                 max-width: 989px;
                 flex-direction: row;
                 padding: 40px;
@@ -398,6 +442,35 @@ header {
                     margin: 0 10px 0 0;
                     &:last-child {
                         margin-right: 0;
+                    }
+                }
+            }
+            &:last-child {
+                margin-top: 60px;
+                section {
+                    margin-top: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 445px;
+                    h1 {
+                        font-size: 48px;
+                        line-height: 56px;
+                        margin-bottom: 40px;
+                    }
+                    form {
+                        flex-direction: row;
+                        .item {
+                            margin: 0;
+                            &:first-child {
+                                input {
+                                    border-top-right-radius: 0;
+                                    border-bottom-right-radius: 0;
+                                }
+                            }
+                            &:last-child {
+                                margin-left: -20px;
+                            }
+                        }
                     }
                 }
             }
@@ -498,7 +571,7 @@ header {
                     left: 90px;
                 }
             }
-            &:last-child {
+            &:nth-child(3) {
                 align-items: start;
                 padding-left: 0;
                 padding-right: 0;
