@@ -273,6 +273,9 @@ footer nav ul:last-child li {
 footer nav ul:last-child li:last-child {
   margin-right: 0;
 }
+footer nav ul:last-child li svg:hover path {
+  fill: #DA6D97;
+}
 
 #clients {
   padding: 80px 24px;
@@ -499,6 +502,32 @@ footer nav ul:last-child li:last-child {
   main {
     margin-bottom: 100px;
   }
+  footer {
+    padding: 30px 40px;
+    background-position: 378px -136px;
+  }
+  footer nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 909px;
+    margin: auto;
+  }
+  footer nav ul:first-child {
+    flex-direction: row;
+    margin: 0;
+  }
+  footer nav ul:first-child li {
+    margin: 0 40px 0 0;
+  }
+  footer nav ul:first-child li:first-child {
+    margin: 0 64px 0 0;
+  }
+  footer nav ul:first-child li:last-child {
+    margin: 0;
+  }
+  footer nav ul:last-child {
+    align-items: center;
+  }
   #clients {
     padding: 88px 116px;
     background-position: center -548px;
@@ -620,6 +649,12 @@ footer nav ul:last-child li:last-child {
   }
   header article section p {
     margin-left: 20px;
+  }
+  footer {
+    background-position: 1050px -136px;
+  }
+  footer nav {
+    max-width: 1110px;
   }
   #clients {
     background-position: -235px -359px;
