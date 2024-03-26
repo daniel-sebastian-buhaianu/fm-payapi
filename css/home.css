@@ -68,22 +68,24 @@ body {
   overflow-x: hidden;
 }
 
-header {
-  padding: 40px 24px 0 24px;
+.header {
   background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
   background-repeat: no-repeat;
   background-position: center -550px;
   margin-bottom: 80px;
+  padding: 40px 24px 0 24px;
 }
-header nav {
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav .menu .mobile .icon {
+
+.mobile-menu__open-icon {
   cursor: pointer;
 }
-header nav .menu .mobile .menu-container {
+.mobile-menu__content {
   width: 300px;
   height: 100vh;
   position: absolute;
@@ -94,10 +96,10 @@ header nav .menu .mobile .menu-container {
   transition: right 0.5s ease;
   z-index: 1;
 }
-header nav .menu .mobile .menu-container.hidden {
+.mobile-menu__content--hidden {
   right: -300px;
 }
-header nav .menu .mobile .menu-container .layer {
+.mobile-menu__layer {
   width: 300px;
   height: 100vh;
   position: absolute;
@@ -108,35 +110,38 @@ header nav .menu .mobile .menu-container .layer {
   background-position: -277px -550px;
   z-index: -1;
 }
-header nav .menu .mobile .menu-container .close {
-  margin-bottom: 42px;
+.mobile-menu__close-icon {
   text-align: right;
+  margin-bottom: 42px;
   padding-bottom: 24px;
   border-bottom: 1px solid #404b56;
 }
-header nav .menu .mobile .menu-container .close .icon:hover path {
+.mobile-menu__close-icon-svg {
+  cursor: pointer;
+}
+.mobile-menu__close-icon-svg:hover path {
   fill: #FBFCFE;
 }
-header nav .menu .mobile .menu-container ul {
-  margin-bottom: 32px;
-}
-header nav .menu .mobile .menu-container ul li {
+.mobile-menu__links {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 32px;
   text-align: center;
 }
-header nav .menu .mobile .menu-container ul li:last-child {
-  margin-bottom: 0;
-}
-header nav .menu .mobile .menu-container ul li a {
+.mobile-menu__link {
+  font-family: "Public Sans", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #b9bec3;
-  font-family: "Public Sans", sans-serif;
+  margin-bottom: 32px;
 }
-header nav .menu .mobile .menu-container ul li a:hover {
+.mobile-menu__link:hover {
   color: #FBFCFE;
 }
-header nav .menu .mobile .menu-container .call-to-action {
+.mobile-menu__link:last-of-type {
+  margin-bottom: 0;
+}
+.mobile-menu__call-to-action {
   display: block;
   background-color: #BA4270;
   padding: 16px 32px;
@@ -147,48 +152,50 @@ header nav .menu .mobile .menu-container .call-to-action {
   color: #FBFCFE;
   text-align: center;
 }
-header nav .menu .mobile .menu-container .call-to-action:hover {
+.mobile-menu__call-to-action:hover {
   background-color: #DA6D97;
 }
-header nav .menu .desktop {
+
+.desktop-menu {
   display: none;
 }
-header article {
+
+.hero {
   display: flex;
   flex-direction: column;
   max-width: 400px;
   margin: 0 auto;
 }
-header article .image {
+.hero__image-wrapper {
   text-align: center;
 }
-header article .image img {
+.hero__image {
   --width: 204.34px;
   position: relative;
   width: var(--width);
   left: calc(var(--width) * 0.06);
 }
-header article section {
+.hero__content {
   margin-top: -24px;
   text-align: center;
 }
-header article section h1 {
+.hero__headline {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
   line-height: 36px;
   color: #36536B;
   margin-bottom: 24px;
 }
-header article section form {
+.hero__form {
   display: flex;
   flex-direction: column;
   margin-bottom: 24px;
 }
-header article section form label {
+.hero__form-label {
   position: absolute;
   left: -100vw;
 }
-header article section form input {
+.hero__form-input {
   width: 100%;
   padding: 16px 32px;
   border-radius: 24px;
@@ -199,30 +206,30 @@ header article section form input {
   color: #36536B;
   cursor: pointer;
 }
-header article section form input[type=submit] {
+.hero__form-input[type=submit] {
   box-shadow: none;
   background-color: #BA4270;
   color: #FBFCFE;
 }
-header article section form input[type=submit]:hover {
+.hero__form-input[type=submit]:hover {
   background-color: #DA6D97;
 }
-header article section form .item {
+.hero__form-item {
   margin-bottom: 16px;
 }
-header article section form .item:last-child {
+.hero__form-item:last-of-type {
   margin-bottom: 0;
 }
-header article section p {
+.hero__text {
   font-family: "Public Sans", sans-serif;
   font-size: 15px;
   color: #6C8294;
 }
-header article section p a {
+.hero__link {
   font-weight: bold;
   color: #6C8294;
 }
-header article section p a:hover {
+.hero__link:hover {
   color: #36536B;
 }
 
@@ -425,43 +432,41 @@ footer nav ul:last-child li svg:hover path {
 }
 
 @media (min-width: 768px) {
-  header {
+  .header {
     padding-left: 40px;
     padding-right: 40px;
     background-size: 949px;
     background-position: center -663px;
   }
-  header nav {
+  .nav {
     margin-bottom: 8px;
   }
-  header nav .menu .mobile {
+  .mobile-menu {
     display: none;
   }
-  header nav .menu .desktop {
+  .desktop-menu {
     display: flex;
     align-items: center;
     margin-left: 64px;
   }
-  header nav .menu .desktop ul {
+  .desktop-menu__links {
     display: flex;
     margin-right: 84px;
   }
-  header nav .menu .desktop ul li {
-    margin-right: 40px;
-  }
-  header nav .menu .desktop ul li:last-child {
-    margin-right: 0;
-  }
-  header nav .menu .desktop ul li a {
+  .desktop-menu__link {
     font-family: "Public Sans", sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #657c8f;
+    margin-right: 40px;
   }
-  header nav .menu .desktop ul li a:hover {
+  .desktop-menu__link:hover {
     color: #36536B;
   }
-  header nav .menu .desktop .call-to-action {
+  .desktop-menu__link:last-of-type {
+    margin-right: 0;
+  }
+  .desktop-menu__call-to-action {
     background-color: #BA4270;
     padding: 16px 24px;
     border-radius: 24px;
@@ -470,33 +475,33 @@ footer nav ul:last-child li svg:hover path {
     font-family: "Public Sans", sans-serif;
     color: #FBFCFE;
   }
-  header nav .menu .desktop .call-to-action:hover {
+  .desktop-menu__call-to-action:hover {
     background-color: #DA6D97;
   }
-  header article {
+  .hero {
     max-width: 507px;
   }
-  header article .image img {
+  .hero__image {
     --width: 253.83px;
   }
-  header article section h1 {
+  .hero__headline {
     font-size: 48px;
     line-height: 56px;
   }
-  header article section form {
+  .hero__form {
     flex-direction: row;
   }
-  header article section form .item {
+  .hero__form-item {
     margin: 0;
   }
-  header article section form .item:first-child {
+  .hero__form-item:first-of-type {
     margin-left: 20px;
   }
-  header article section form .item:first-child input {
+  .hero__form-item:first-of-type .hero__form-input {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  header article section form .item:last-child {
+  .hero__form-item:last-of-type {
     margin-left: -20px;
   }
   main {
@@ -608,46 +613,44 @@ footer nav ul:last-child li svg:hover path {
   }
 }
 @media (min-width: 1440px) {
-  header {
+  .header {
     padding: 40px 0 0 0;
     background-size: 780px;
     background-position: 800px -172px;
   }
-  header > * {
+  .header > * {
     width: 1110px;
     margin: 0 auto;
   }
-  header nav {
+  .nav {
     margin-bottom: 0;
   }
-  header nav .menu {
+  .desktop-menu {
     flex-grow: 1;
-  }
-  header nav .menu .desktop {
     justify-content: space-between;
   }
-  header article {
+  .hero {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     max-width: none;
   }
-  header article .image img {
+  .hero__image {
     --width: 420px;
   }
-  header article section {
+  .hero__content {
     max-width: 546px;
     text-align: start;
   }
-  header article section h1 {
+  .hero__headline {
     font-size: 72px;
     line-height: 72px;
     margin-bottom: 32px;
   }
-  header article section form .item:first-of-type {
+  .hero__form-item:first-of-type {
     margin-left: 0;
   }
-  header article section p {
+  .hero__text {
     margin-left: 20px;
   }
   footer {

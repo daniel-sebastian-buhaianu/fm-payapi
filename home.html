@@ -7,58 +7,57 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Primary navigation">
-            <a class="logo" href="#">
-                <img src="assets/shared/desktop/logo.svg" alt="payapi logo">
+    <header class="header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="nav__logo" href="#">
+                <img class="nav__logo-img" src="assets/shared/desktop/logo.svg" alt="payapi logo">
             </a>
-            <div class="menu">
-                <div class="mobile">
-                    <div class="icon">
-                        <img src="assets/shared/mobile/menu.svg" alt="Menu icon: three horizontal lines representing a menu">
-                    </div>
-                    <div class="menu-container hidden">
-                        <div class="layer"></div>
-                        <div class="close">
-                            <svg class="icon" width="22" height="23" xmlns="http://www.w3.org/2000/svg"><path d="M19.839.54L21.96 2.66 13.12 11.5l8.84 8.839-2.121 2.121-8.84-8.84-8.838 8.84L.04 20.34l8.838-8.84L.04 2.662 2.16.54 11 9.378 19.839.54z" fill="#b9bec3" fill-rule="evenodd"/></svg>
-                        </div>
-                        <ul>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <a class="call-to-action" href="#">Schedule a Demo</a>
-                    </div>
+            <div class="mobile-menu">
+                <div class="mobile-menu__open-icon">
+                    <img class="mobile-menu__open-icon-img" src="assets/shared/mobile/menu.svg" alt="Menu icon: three horizontal lines representing a menu">
                 </div>
-                <div class="desktop">
-                    <ul>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <a class="call-to-action" href="#">Schedule a Demo</a>
+                <div class="mobile-menu__content mobile-menu__content--hidden">
+                    <div class="mobile-menu__layer"></div>
+                    <div class="mobile-menu__close-icon">
+                        <svg class="mobile-menu__close-icon-svg" width="22" height="23" xmlns="http://www.w3.org/2000/svg"><path d="M19.839.54L21.96 2.66 13.12 11.5l8.84 8.839-2.121 2.121-8.84-8.84-8.838 8.84L.04 20.34l8.838-8.84L.04 2.662 2.16.54 11 9.378 19.839.54z" fill="#b9bec3" fill-rule="evenodd"/></svg>
+                    </div>
+                    <div class="mobile-menu__links">
+                        <a class="mobile-menu__link" href="#">Pricing</a>
+                        <a class="mobile-menu__link" href="#">About</a>
+                        <a class="mobile-menu__link" href="#">Contact</a>
+                    </div>
+                    <a class="mobile-menu__call-to-action" href="#">Schedule a Demo</a>
                 </div>
+            </div>
+            <div class="desktop-menu">
+                <div class="desktop-menu__links">
+                    <a class="desktop-menu__link" href="#">Pricing</a>
+                    <a class="desktop-menu__link" href="#">About</a>
+                    <a class="desktop-menu__link" href="#">Contact</a>
+                </div>
+                <a class="desktop-menu__call-to-action" href="#">Schedule a Demo</a>
             </div>
         </nav>
-        <article>
-            <div class="image">
-                <img src="assets/home/desktop/illustration-phone-mockup.svg" alt="iPhone X app notification: The payment has been processed. The total amount deducted from your account is US $104.90.">
+        <div class="hero">
+            <div class="hero__image-wrapper">
+                <img class="hero__image" src="assets/home/desktop/illustration-phone-mockup.svg" alt="iPhone X app notification: The payment has been processed. The total amount deducted from your account is US $104.90.">
             </div>
-            <section>
-                <h1>Start building with our APIs for absolutely free.</h1>
-                <form>
-                    <div class="item">
-                        <input type="text" name="email" id="email" placeholder="Enter email address">
-                        <label for="email">Email address</label>
+            <div class="hero__content">
+                <h1 class="hero__headline">Start building with our APIs for absolutely free.</h1>
+                <form class="hero__form">
+                    <div class="hero__form-item">
+                        <input class="hero__form-input" type="text" name="email" id="email" placeholder="Enter email address">
+                        <label class="hero__form-label" for="email">Email address</label>
                     </div>
-                    <div class="item">
-                        <input type="submit" value="Schedule a Demo">
+                    <div class="hero__form-item">
+                        <input class="hero__form-input" type="submit" value="Schedule a Demo">
                     </div>
                 </form>
-                <p>Have any questions? <a href="#">Contact Us</a></p>
-            </section>
-        </article>
+                <p class="hero__text">Have any questions? <a class="hero__link" href="#">Contact Us</a></p>
+            </div>
+        </div>
     </header>
+
     <main>
         <div id="clients">
             <div>

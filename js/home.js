@@ -1,12 +1,12 @@
 window.addEventListener('load', function() {
-    const mobileMenuContainer = document.querySelector('.menu .mobile .menu-container');
+    const mobileMenuContent = document.querySelector('.mobile-menu__content');
 
-    document.querySelector('.menu .mobile .icon').addEventListener('click', function() {
-        removeClass('hidden', mobileMenuContainer);
+    document.querySelector('.mobile-menu__open-icon').addEventListener('click', function() {
+        removeClass('mobile-menu__content--hidden', mobileMenuContent);
     });
 
-    mobileMenuContainer.querySelector('.close .icon').addEventListener('click', function() {
-        addClass('hidden', mobileMenuContainer);
+    mobileMenuContent.querySelector('.mobile-menu__close-icon').addEventListener('click', function() {
+        addClass('mobile-menu__content--hidden', mobileMenuContent);
     });
 
 });
