@@ -14,12 +14,11 @@ body {
     background-position: center -550px;
     margin-bottom: 80px;
     padding: 40px 24px 0 24px;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .mobile-menu {
@@ -345,51 +344,47 @@ body {
     }
 }
 
-footer {
+.footer {
     background-color: #1B262F;
     background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
     background-position: center 177px;
     background-repeat: no-repeat;
     padding-bottom: 55px;
     padding-top: 40px;
-    nav {
-        ul {
-            display: flex;
-            &:first-child {
-                flex-direction: column;
-                align-items: center;
-                margin-bottom: 40px;
-                li {
-                    margin-bottom: 30px;
-                    &:first-child {
-                        margin-bottom: 40px;
-                    }
-                    &:last-child {
-                        margin-bottom: 0;
-                    }
-                    a {
-                        font-family: 'Public Sans', sans-serif;
-                        font-size: 15px;
-                        font-weight: bold;
-                        color: #b9bec3;
-                        &:hover {
-                            color: #FBFCFE;
-                        }
-                    }
-                }
-            }
-            &:last-child {
-                justify-content: center;
-                li {
-                    margin-right: 24px;
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                    svg:hover path {
-                        fill: #DA6D97;
-                    }
-                }
-            }
+    &__logo {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__link {
+        margin-bottom: 30px;
+        font-family: 'Public Sans', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        color: #b9bec3;
+        &:hover {
+            color: #FBFCFE;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__social-links {
+        display: flex;
+        justify-content: center;
+    }
+    &__social-link {
+        margin-right: 24px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+        &-icon:hover path {
+            fill: #DA6D97;
         }
     }
 }
@@ -400,10 +395,9 @@ footer {
         padding-right: 40px;
         background-size: 949px;
         background-position: center -663px;
-    }
-
-    .nav {
-        margin-bottom: 8px;
+        &__nav {
+            margin-bottom: 8px;
+        }
     }
 
     .mobile-menu {
@@ -561,32 +555,29 @@ footer {
         }
     }
 
-    footer {
+    .footer {
         padding: 30px 40px;
         background-position: 378px -136px;
-        nav {
+        &__nav {
             display: flex;
-            justify-content: space-between;
-            max-width: 909px;
+            max-width: 688px;
             margin: auto;
-            ul {
-                &:first-child {
-                    flex-direction: row;
-                    margin: 0;
-                    li {
-                        margin: 0 40px 0 0;
-                        &:first-child {
-                            margin: 0 64px 0 0;
-                        }
-                        &:last-child {
-                            margin: 0;
-                        }
-                    }
-                }
-                &:last-child {
-                    align-items: center;
-                }
+        }
+        &__logo {
+            margin: 0 64px 0 0;
+        }
+        &__links {
+            flex-direction: row;
+            margin: 0 137px 0 0;
+        }
+        &__link {
+            margin: 0 40px 0 0;
+            &:last-of-type {
+                margin: 0;
             }
+        }
+        &__social-links {
+            align-items: center;
         }
     }
 }
@@ -600,10 +591,9 @@ footer {
             width: 1110px;
             margin: 0 auto;
         }
-    }
-
-    .nav {
-        margin-bottom: 0;
+        &__nav {
+            margin-bottom: 0;
+        }
     }
 
     .desktop-menu {
@@ -703,10 +693,13 @@ footer {
         }
     }
 
-    footer {
+    .footer {
         background-position: 1050px -136px;
-        nav {
+        &__nav {
             max-width: 1110px;
+        }
+        &__links {
+            margin-right: 559px;
         }
     }
 }
