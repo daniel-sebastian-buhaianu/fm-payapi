@@ -278,6 +278,11 @@ body {
         @include buttonStyles($color: #36536B, $backgroundColor: #FBFCFE, $hoverColor: #36536B, $hoverBackgroundColor: #FBFCFE);
         width: 100%;
         box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        &::placeholder {
+            font-family: 'Public Sans', sans-serif;
+            color: #99a7b4;
+            opacity: 1;
+        }
         &[type="submit"] {
             box-shadow: none;
             @include buttonStyles();

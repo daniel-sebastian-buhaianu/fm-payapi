@@ -145,6 +145,7 @@ body {
   text-align: center;
   padding: 16px 32px;
   border-radius: 24px;
+  font-family: "Public Sans", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #FBFCFE;
@@ -255,6 +256,7 @@ body {
 .clients__link {
   padding: 16px 32px;
   border-radius: 24px;
+  font-family: "Public Sans", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #FBFCFE;
@@ -409,6 +411,7 @@ body {
 .demo-form__input {
   padding: 16px 32px;
   border-radius: 24px;
+  font-family: "Public Sans", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #36536B;
@@ -421,10 +424,16 @@ body {
   color: #36536B;
   background-color: #FBFCFE;
 }
+.demo-form__input::placeholder {
+  font-family: "Public Sans", sans-serif;
+  color: #99a7b4;
+  opacity: 1;
+}
 .demo-form__input[type=submit] {
   box-shadow: none;
   padding: 16px 32px;
   border-radius: 24px;
+  font-family: "Public Sans", sans-serif;
   font-size: 15px;
   font-weight: bold;
   color: #FBFCFE;
@@ -479,6 +488,7 @@ body {
   .desktop-menu__call-to-action {
     padding: 16px 24px;
     border-radius: 24px;
+    font-family: "Public Sans", sans-serif;
     font-size: 15px;
     font-weight: bold;
     color: #FBFCFE;
