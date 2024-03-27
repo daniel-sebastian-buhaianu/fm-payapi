@@ -1,3 +1,7 @@
+html {
+    font-family: 'Public Sans', sans-serif;
+}
+
 body {
     min-height: 100vh;
     background-color: #EDF3F8;
@@ -5,9 +9,7 @@ body {
 }
 
 .header {
-    background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
-    background-repeat: no-repeat;
-    background-position: center -550px;
+    @include bgImageStyles($position: center -550px);
     margin-bottom: 80px;
     padding: 40px 24px 0 24px;
     &__nav {
@@ -21,12 +23,15 @@ body {
     &__open-icon {
         cursor: pointer;
     }
-    &__content {
+    &__content,
+    &__layer {
         width: 300px;
         height: 100vh;
         position: absolute;
         top: 0;
         right: 0;
+    }
+    &__content {
         background-color: #1B262F;
         padding: 48px 24px;
         transition: right 0.5s ease;
@@ -36,14 +41,7 @@ body {
         }
     }
     &__layer {
-        width: 300px;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
-        background-repeat: no-repeat;
-        background-position: -277px -550px;
+        @include bgImageStyles($position: -277px -550px);
         z-index: -1;
     }
     &__close-icon {
@@ -65,7 +63,6 @@ body {
         text-align: center;
     }
     &__link {
-        font-family: 'Public Sans', sans-serif;
         font-size: 20px;
         font-weight: bold;
         color: #b9bec3;
@@ -79,17 +76,8 @@ body {
     }
     &__call-to-action {
         display: block;
-        background-color: #BA4270;
-        padding: 16px 32px;
-        border-radius: 24px;
-        font-size: 15px;
-        font-weight: bold;
-        font-family: 'Public Sans', sans-serif;
-        color: #FBFCFE;
         text-align: center;
-        &:hover {
-            background-color: #DA6D97;
-        }
+        @include buttonStyles();
     }
 }
 
@@ -102,9 +90,7 @@ body {
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
-    &__image-wrapper {
-        text-align: center;
-    }
+    text-align: center;
     &__image {
         --width: 204.34px;
         position: relative;
@@ -113,51 +99,12 @@ body {
     }
     &__content {
         margin-top: -24px;
-        text-align: center;
     }
     &__headline {
-        font-family: 'DM Serif Display', serif;
-        font-size: 32px;
-        line-height: 36px;
-        color: #36536B;
+        @include headlineStyles();
         margin-bottom: 24px;
-    }
-    &__form {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 24px;
-        &-label {
-            position: absolute;
-            left: -100vw;
-        }
-        &-input {
-            width: 100%;
-            padding: 16px 32px;
-            border-radius: 24px;
-            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-            font-family: 'Public Sans', sans-serif;
-            font-size: 15px;
-            font-weight: bold;
-            color: #36536B;
-            cursor: pointer;
-            &[type="submit"] {
-                box-shadow: none;
-                background-color: #BA4270;
-                color: #FBFCFE;
-                &:hover {
-                    background-color: #DA6D97;
-                }
-            }
-        }
-        &-item {
-            margin-bottom: 16px;
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
     }
     &__text {
-        font-family: 'Public Sans', sans-serif;
         font-size: 15px;
         color: #6C8294;
     }
@@ -175,11 +122,9 @@ body {
 }
 
 .clients {
+    @include bgImageStyles($position: center -602px);
     padding: 80px 24px;
     background-color: #1B262F;
-    background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
-    background-position: center -602px;
-    background-repeat: no-repeat;
     > * {
         max-width: 367px;
         margin-left: auto;
@@ -202,32 +147,17 @@ body {
         text-align: center;
     }
     &__headline {
-        font-family: 'DM Serif Display', serif;
-        font-size: 32px;
-        line-height: 36px;
-        color: #FBFCFE;
+        @include headlineStyles($color: #FBFCFE);
         margin-bottom: 16px;
     }
     &__summary {
-        font-family: 'Public Sans', sans-serif;
-        font-size: 15px;
-        line-height: 28px;
-        color: #b8bcc0;
+        @include summaryStyles($color: #b8bcc0);
         margin-bottom: 32px;
     }
     &__link {
+        @include buttonStyles($backgroundColor: inherit, $hoverBackgroundColor: #FBFCFE, $hoverColor: #1B262F);
         display: inline-block;
-        color: #FBFCFE;
-        font-family: 'Public Sans', sans-serif;
-        font-size: 15px;
-        font-weight: bold;
-        padding: 16px 32px;
         border: 1px solid #FBFCFE;
-        border-radius: 24px;
-        &:hover {
-            background-color: #FBFCFE;
-            color: #1B262F;
-        }
     }
 }
 
@@ -246,17 +176,11 @@ body {
         text-align: center;
     }
     &__headline {
-        font-family: 'DM Serif Display', serif;
-        font-size: 36px;
-        line-height: 36px;
-        color: #36536B;
+        @include headlineStyles($fontSize: 36px);
         margin-bottom: 24px;
     }
     &__summary {
-        font-family: 'Public Sans', sans-serif;
-        font-size: 15px;
-        line-height: 28px;
-        color: #6C8294;
+        @include summaryStyles();
     }
 }
 
@@ -278,7 +202,6 @@ body {
         margin-bottom: 32px;
     }
     &__headline {
-        font-family: 'Public Sans', sans-serif;
         font-size: 18px;
         font-weight: bold;
         line-height: 25px;
@@ -286,10 +209,7 @@ body {
         color: #36536B;
     }
     &__summary {
-        line-height: 25px;
-        font-family: 'Public Sans', sans-serif;
-        font-size: 15px;
-        color: #6C8294;
+        @include summaryStyles($lineHeight: 25px);
     }
 }
 
@@ -299,52 +219,14 @@ body {
     max-width: 375px;
     margin: 0 auto;
     &__headline {
-        font-family: 'DM Serif Display', serif;
-        font-size: 32px;
-        line-height: 36px;
-        color: #36536B;
+        @include headlineStyles();
         margin-bottom: 32px;
-    }
-    &__form {
-        display: flex;
-        flex-direction: column;
-        &-item {
-            margin-bottom: 16px;
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-        &-label {
-            position: absolute;
-            left: -100vw;
-        }
-        &-input {
-            width: 100%;
-            padding: 16px 32px;
-            border-radius: 24px;
-            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-            font-family: 'Public Sans', sans-serif;
-            font-size: 15px;
-            font-weight: bold;
-            color: #36536B;
-            cursor: pointer;
-            &[type="submit"] {
-                box-shadow: none;
-                background-color: #BA4270;
-                color: #FBFCFE;
-                &:hover {
-                    background-color: #DA6D97;
-                }
-            }
-        }
     }
 }
 
 .footer {
+    @include bgImageStyles($position: center 177px);
     background-color: #1B262F;
-    background-image: url(../assets/shared/desktop/bg-pattern-circle.svg);
-    background-position: center 177px;
-    background-repeat: no-repeat;
     padding-bottom: 55px;
     padding-top: 40px;
     &__logo {
@@ -359,7 +241,6 @@ body {
     }
     &__link {
         margin-bottom: 30px;
-        font-family: 'Public Sans', sans-serif;
         font-size: 15px;
         font-weight: bold;
         color: #b9bec3;
@@ -381,6 +262,31 @@ body {
         }
         &-icon:hover path {
             fill: #DA6D97;
+        }
+    }
+}
+
+.demo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    &__label {
+        position: absolute;
+        left: -100vw;
+    }
+    &__input {
+        @include buttonStyles($color: #36536B, $backgroundColor: #FBFCFE, $hoverColor: #36536B, $hoverBackgroundColor: #FBFCFE);
+        width: 100%;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        &[type="submit"] {
+            box-shadow: none;
+            @include buttonStyles();
+        }
+    }
+    &__item {
+        margin-bottom: 16px;
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 }
