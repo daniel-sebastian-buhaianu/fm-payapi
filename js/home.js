@@ -1,12 +1,24 @@
 window.addEventListener('load', function() {
     const mobileMenuContent = document.querySelector('.mobile-menu__content');
 
-    document.querySelector('.mobile-menu__open-icon').addEventListener('click', function() {
-        removeClass('mobile-menu__content--hidden', mobileMenuContent);
+    document
+        .querySelector('.mobile-menu__open-icon')
+        .addEventListener('click', function() {
+            removeClass('mobile-menu__content--hidden', mobileMenuContent);
     });
 
-    mobileMenuContent.querySelector('.mobile-menu__close-icon').addEventListener('click', function() {
-        addClass('mobile-menu__content--hidden', mobileMenuContent);
+    mobileMenuContent
+        .querySelector('.mobile-menu__close-icon')
+        .addEventListener('click', function() {
+            addClass('mobile-menu__content--hidden', mobileMenuContent);
+    });
+
+    document.addEventListener('click', function(event) {
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const targetElement = event.target;
+        if (targetElement != mobileMenu && !mobileMenu.contains(targetElement)) {
+            addClass('mobile-menu__content--hidden', mobileMenuContent);
+        }
     });
 
 });
