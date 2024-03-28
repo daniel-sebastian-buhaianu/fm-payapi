@@ -95,6 +95,10 @@ body {
     text-align: center;
 }
 
+.main {
+    margin-bottom: 80px;
+}
+
 .plans-wrapper {
     padding: 0 24px;
     margin-bottom: 80px;
@@ -165,6 +169,9 @@ body {
     &__headline {
         @include headlineStyles();
         margin-bottom: 32px;
+    }
+    .demo-form {
+        margin-bottom: 0;
     }
 }
 

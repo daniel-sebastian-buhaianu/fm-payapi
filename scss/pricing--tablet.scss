@@ -38,6 +38,39 @@
     }
 }
 
+.main {
+    margin-bottom: 100px;
+}
+
+.plans-wrapper {
+    display: flex;
+    max-width: 689px;
+    padding: 0;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan {
+    margin-right: 10px;
+    &:last-of-type {
+        margin-right: 0;
+    }
+    &__name {
+        margin-bottom: 12px;
+    }
+    &__description {
+        display: block;
+        font-size: 15px;
+        line-height: 28px;
+        color: #6C8294;
+        margin-bottom: 16px;
+    }
+    &__price {
+        font-size: 48px;
+    }
+}
+
 .call-to-action {
     margin-top: 60px;
     max-width: 445px;
