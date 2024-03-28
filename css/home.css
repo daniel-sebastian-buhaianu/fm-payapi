@@ -368,7 +368,10 @@ body {
   padding-top: 40px;
 }
 .footer__logo {
-  text-align: center;
+  display: block;
+  max-width: 135px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
 }
 .footer__links {
