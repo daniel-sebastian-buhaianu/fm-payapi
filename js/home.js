@@ -21,6 +21,13 @@ window.addEventListener('load', function() {
         }
     });
 
+    document
+        .querySelectorAll('.demo-form__input[type="submit"]')
+        .forEach(input => {
+            input.addEventListener('click', function(event) {
+                event.preventDefault();
+            });
+        });
 });
 
 function removeClass(_class, element) {
