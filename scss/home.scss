@@ -1,0 +1,14 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'home__mixins';
+
+@import 'home--mobile';
+
+@media (min-width: 768px) {
+    @import 'home--tablet';
+}
+
+@media (min-width: 1440px) {
+    @import 'home--desktop';
+}
