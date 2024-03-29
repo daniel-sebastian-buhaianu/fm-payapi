@@ -1,0 +1,48 @@
+.header {
+    margin-bottom: 42px;
+    padding: 40px 0 30px 0;
+    background-size: 780px;
+    background-position: 800px -527px;
+    > * {
+        width: 1110px;
+        margin: 0 auto;
+    }
+    &__nav {
+        margin-bottom: 82px;
+    }
+}
+
+.hero__headline {
+    text-align: start;
+}
+
+.desktop-menu {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.call-to-action {
+    max-width: none;
+    &__content {
+        display: flex;
+        width: 1110px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__headline {
+        margin-bottom: 0;
+    }
+    .demo-form {
+        margin-bottom: 0;
+    }
+}
+
+.footer {
+    background-position: 1050px -136px;
+    &__nav {
+        max-width: 1110px;
+    }
+    &__links {
+        margin-right: 559px;
+    }
+}
