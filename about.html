@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payapi | Pricing</title>
+    <title>payapi | About</title>
     <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/pricing.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <div class="site-wrapper">
@@ -41,57 +41,49 @@
                 </div>
             </nav>
             <div class="hero">
-                <h1 class="hero__headline">Pricing</h1>
+                <h1 class="hero__headline">We empower innovators by delivering access to the financial system</h1>
             </div>
         </header>
         <main class="main">
-            <div class="plans-wrapper">
-                <div class="plan">
-                    <h2 class="plan__name">Free Plan</h2>
-                    <p class="plan__description">Build and test using our core set of products with up to 100 API requests </p>
-                    <p class="plan__price">$0.00</p>
-                    <ul class="plan__feature-list">
-                        <li class="plan__feature plan__feature--checked">Transactions</li>
-                        <li class="plan__feature plan__feature--checked">Auth</li>
-                        <li class="plan__feature plan__feature--checked">Identity</li>
-                        <li class="plan__feature">Investments</li>
-                        <li class="plan__feature">Assets</li>
-                        <li class="plan__feature">Liabilities</li>
-                        <li class="plan__feature">Income</li>
-                    </ul>
-                    <a class="plan__call-to-action" href="#">Request Access</a>
+            <article class="info">
+                <section class="info__section">
+                    <h2 class="info__headline">Our Vision</h2>
+                    <p class="info__summary">Our main goal is to build beautiful consumer experiences along with developer-friendly infrastructure. The result is an intelligent tool that gives everyone the ability to create amazing products that solve big problems. We are deeply focused on democratizing financial services through technology.</p>
+                </section>
+                <section class="info__section">
+                    <h2 class="info__headline">Our Business</h2>
+                    <p class="info__summary">At the core of our platform is the technical infrastructure APIs that connect consumers. Our innovative product provides key insights for businesses and individuals, as well as robust reporting for traditional financial institutions and developers.</p>
+                </section>
+            </article>
+            <picture class="picture">
+                <source media="(min-width: 1440px)" srcset="assets/about/desktop/image-team-members.jpg">
+                <source media="(min-width: 768px)" srcset="assets/about/tablet/image-team-members.jpg">
+                <img class="picture__img" src="assets/about/mobile/image-team-members.jpg" alt="three team members sitting at a cafe and working while enjoying a cup of coffee">
+            </picture>
+            <div class="stats">
+                <div class="stats__item">
+                    <p class="stats__name">Team Members</p>
+                    <p class="stats__number">300+</p>
                 </div>
-                <div class="plan">
-                    <h2 class="plan__name">Basic Plan</h2>
-                    <p class="plan__description">Launch your project with unlimited requests and no contractual minimums</p>
-                    <p class="plan__price">$249.00</p>
-                    <ul class="plan__feature-list">
-                        <li class="plan__feature plan__feature--checked">Transactions</li>
-                        <li class="plan__feature plan__feature--checked">Auth</li>
-                        <li class="plan__feature plan__feature--checked">Identity</li>
-                        <li class="plan__feature plan__feature--checked">Investments</li>
-                        <li class="plan__feature plan__feature--checked">Assets</li>
-                        <li class="plan__feature">Liabilities</li>
-                        <li class="plan__feature">Income</li>
-                    </ul>
-                    <a class="plan__call-to-action" href="#">Request Access</a>
+                <div class="stats__item">
+                    <p class="stats__name">Offices in the US</p>
+                    <p class="stats__number">3</p>
                 </div>
-                <div class="plan">
-                    <h2 class="plan__name">Premium Plan</h2>
-                    <p class="plan__description">Get tailored solutions, volume pricing, and dedicated support for your team</p>
-                    <p class="plan__price">$499.00</p>
-                    <ul class="plan__feature-list">
-                        <li class="plan__feature plan__feature--checked">Transactions</li>
-                        <li class="plan__feature plan__feature--checked">Auth</li>
-                        <li class="plan__feature plan__feature--checked">Identity</li>
-                        <li class="plan__feature plan__feature--checked">Investments</li>
-                        <li class="plan__feature plan__feature--checked">Assets</li>
-                        <li class="plan__feature plan__feature--checked">Liabilities</li>
-                        <li class="plan__feature plan__feature--checked">Income</li>
-                    </ul>
-                    <a class="plan__call-to-action" href="#">Request Access</a>
+                <div class="stats__item">
+                    <p class="stats__name">Transactions analyzed</p>
+                    <p class="stats__number">10M+</p>
                 </div>
             </div>
+            <article class="info">
+                <section class="info__section">
+                    <h2 class="info__headline">Our Business</h2>
+                    <p class="info__summary">We strongly believe there's always an opportunity to learn from each other outside of day-to-day work, whether it's company-wide offsites, internal hackathons, or co-worker meetups. We always value cross-team collaboration and diversity of thought, no matter the job title.</p>
+                </section>
+                <section class="info__section">
+                    <h2 class="info__headline">The People</h2>
+                    <p class="info__summary">We're all passionate about building a more efficient and inclusive financial infrastructure together. At PayAPI, we have diverse backgrounds and skills.</p>
+                </section>
+            </article>
             <div class="call-to-action">
                 <div class="call-to-action__content">
                     <h1 class="call-to-action__headline">Ready to start?</h1>
@@ -131,6 +123,6 @@
             </nav>
         </footer>
     </div>
-    <script src="js/pricing.js"></script>
+    <script src="js/about.js"></script>
 </body>
 </html>

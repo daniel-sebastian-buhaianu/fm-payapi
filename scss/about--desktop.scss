@@ -1,0 +1,78 @@
+.header {
+    margin-bottom: 40px;
+    padding: 40px 0 30px 0;
+    background-size: 780px;
+    background-position: 800px -527px;
+    > * {
+        width: 1110px;
+        margin: 0 auto;
+    }
+    &__nav {
+        margin-bottom: 82px;
+    }
+}
+
+.desktop-menu {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.hero {
+    max-width: 730px;
+    &__headline {
+        font-size: 56px;
+    }
+}
+
+.main {
+    @include bgImageStyles($position: -520px 200px);
+}
+
+.info {
+    max-width: 920px;
+    margin-bottom: 100px;
+    &__summary {
+        max-width: 635px;
+    }
+}
+
+.picture {
+    margin-bottom: 72px;
+    &__img {
+        max-height: 500px;
+    }
+}
+
+.stats {
+    max-width: 1110px;
+    margin-bottom: 72px;
+    &__item {
+        width: 350px;
+    }
+}
+
+.call-to-action {
+    max-width: none;
+    &__content {
+        display: flex;
+        width: 1110px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__headline {
+        margin-bottom: 0;
+    }
+    .demo-form {
+        margin-bottom: 0;
+    }
+}
+
+.footer {
+    background-position: 1050px -136px;
+    &__nav {
+        max-width: 1110px;
+    }
+    &__links {
+        margin-right: 559px;
+    }
+}
