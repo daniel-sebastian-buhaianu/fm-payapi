@@ -415,8 +415,46 @@ body {
     color: #FBFCFE;
     background-color: #DA6D97;
   }
+  .hero {
+    max-width: 573px;
+    margin: auto;
+  }
   .main {
     margin-bottom: 100px;
+  }
+  .info {
+    padding: 0;
+    max-width: 689px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 92px;
+  }
+  .info__section {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
+  .info__summary {
+    max-width: 456px;
+  }
+  .picture {
+    margin-bottom: 64px;
+  }
+  .stats {
+    max-width: 689px;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
+  .stats__item {
+    width: 223px;
+    margin-bottom: 0;
+    text-align: start;
+    border-top: 1px solid #bfcbd5;
+    border-bottom: 1px solid #bfcbd5;
+    padding: 16px 0;
   }
   .call-to-action {
     margin-top: 60px;
