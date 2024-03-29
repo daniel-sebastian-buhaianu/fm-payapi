@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     padding: 40px 0 30px 0;
     background-size: 780px;
     background-position: 800px -527px;
@@ -12,13 +12,43 @@
     }
 }
 
-.hero__headline {
-    text-align: start;
-}
-
 .desktop-menu {
     flex-grow: 1;
     justify-content: space-between;
+}
+
+.hero {
+    max-width: 730px;
+    &__headline {
+        font-size: 56px;
+    }
+}
+
+.main {
+    @include bgImageStyles($position: -520px 200px);
+}
+
+.info {
+    max-width: 920px;
+    margin-bottom: 100px;
+    &__summary {
+        max-width: 635px;
+    }
+}
+
+.picture {
+    margin-bottom: 72px;
+    &__img {
+        max-height: 500px;
+    }
+}
+
+.stats {
+    max-width: 1110px;
+    margin-bottom: 72px;
+    &__item {
+        width: 350px;
+    }
 }
 
 .call-to-action {
