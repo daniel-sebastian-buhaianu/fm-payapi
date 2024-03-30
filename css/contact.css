@@ -166,6 +166,10 @@ body {
   display: none;
 }
 
+.hero {
+  width: 327px;
+  margin: auto;
+}
 .hero__headline {
   font-family: "DM Serif Display", serif;
   font-size: 32px;
@@ -182,6 +186,64 @@ body {
 
 .main {
   margin-bottom: 80px;
+}
+.main__content {
+  padding: 0 24px;
+}
+
+.contact-form {
+  margin-bottom: 80px;
+}
+.contact-form__item {
+  margin-bottom: 24px;
+}
+.contact-form__item:last-of-type {
+  margin-bottom: 0;
+}
+.contact-form__label {
+  position: absolute;
+  left: -100vw;
+}
+.contact-form__textfield {
+  width: 100%;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  border-bottom: 1px solid #92a3b1;
+  background-color: #edf3f8;
+  color: #36536B;
+}
+.contact-form__textfield::placeholder {
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #92a3b1;
+}
+.contact-form__textfield:focus {
+  border-bottom: 1px solid #36536B;
+}
+.contact-form__textfield--textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  resize: none;
+}
+.contact-form__textfield--textarea:focus {
+  outline: none;
+}
+.contact-form__submit {
+  padding: 14px 48px;
+  border-radius: 24px;
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: #36536B;
+  background-color: #edf3f8;
+  cursor: pointer;
+  border: 1px solid #36536B;
+}
+.contact-form__submit:hover {
+  color: #FBFCFE;
+  background-color: #36536B;
 }
 
 .call-to-action {
@@ -306,6 +368,53 @@ body {
   margin-bottom: 0;
 }
 
+.custom-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: "Public Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #36536B;
+  cursor: pointer;
+}
+.custom-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.custom-checkbox__input:checked ~ .custom-checkbox__box {
+  background-color: #BA4270;
+}
+.custom-checkbox__input:checked ~ .custom-checkbox__box::after {
+  display: block;
+}
+.custom-checkbox__box {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background-color: #bfcbd5;
+  margin-right: 26px;
+}
+.custom-checkbox__box::after {
+  content: "";
+  display: none;
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 @media (min-width: 768px) {
   .header {
     margin-bottom: 0;
@@ -354,6 +463,9 @@ body {
   .desktop-menu__call-to-action:hover {
     color: #FBFCFE;
     background-color: #DA6D97;
+  }
+  .hero {
+    width: 552px;
   }
   .main {
     margin-bottom: 100px;
@@ -425,8 +537,8 @@ body {
   .header__nav {
     margin-bottom: 82px;
   }
-  .hero__headline {
-    text-align: start;
+  .hero {
+    width: 730px;
   }
   .desktop-menu {
     flex-grow: 1;
