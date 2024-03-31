@@ -103,10 +103,14 @@ body {
     margin-bottom: 80px;
     &__content {
         padding: 0 24px;
+        margin-bottom: 80px;
     }
 }
 
 .contact-form {
+    max-width: 327px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 80px;
     &__item {
         margin-bottom: 24px;
@@ -147,6 +151,25 @@ body {
     &__submit {
         @include buttonStyles($color: #36536B, $backgroundColor: #edf3f8, $hoverBackgroundColor: #36536B, $hoverColor: #FBFCFE, $padding: 14px 48px);
         border: 1px solid #36536B;
+    }
+}
+
+.clients {
+    max-width: 327px;
+    margin: auto;
+    &__headline {
+        font-family: 'DM Serif Display', serif;
+        font-size: 24px;
+        line-height: 32px;
+        color: #647b8e;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+    &__logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        align-items: center;
     }
 }
 

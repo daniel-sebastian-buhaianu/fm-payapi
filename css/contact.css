@@ -189,9 +189,13 @@ body {
 }
 .main__content {
   padding: 0 24px;
+  margin-bottom: 80px;
 }
 
 .contact-form {
+  max-width: 327px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 80px;
 }
 .contact-form__item {
@@ -244,6 +248,25 @@ body {
 .contact-form__submit:hover {
   color: #FBFCFE;
   background-color: #36536B;
+}
+
+.clients {
+  max-width: 327px;
+  margin: auto;
+}
+.clients__headline {
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #647b8e;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.clients__logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
 }
 
 .call-to-action {
