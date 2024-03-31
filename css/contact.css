@@ -440,8 +440,8 @@ body {
 
 @media (min-width: 768px) {
   .header {
+    padding-bottom: 54px;
     margin-bottom: 0;
-    padding-bottom: 100px;
     padding-left: 40px;
     padding-right: 40px;
     background-position: 505px -464px;
@@ -492,6 +492,24 @@ body {
   }
   .main {
     margin-bottom: 100px;
+  }
+  .main__content {
+    margin-bottom: 100px;
+  }
+  .contact-form {
+    max-width: 445px;
+  }
+  .clients {
+    max-width: 541px;
+  }
+  .clients__headline {
+    max-width: 445px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .clients__logos {
+    grid-template-columns: repeat(3, 1fr);
   }
   .call-to-action {
     margin-top: 60px;
