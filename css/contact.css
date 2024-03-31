@@ -225,6 +225,12 @@ body {
 .contact-form__textfield:focus {
   border-bottom: 1px solid #36536B;
 }
+.contact-form__textfield-error {
+  font-size: 11px;
+  margin-top: 8px;
+  padding-left: 20px;
+  color: #f67a7c;
+}
 .contact-form__textfield--textarea {
   border-top: none;
   border-right: none;
@@ -233,6 +239,13 @@ body {
 }
 .contact-form__textfield--textarea:focus {
   outline: none;
+}
+.contact-form__textfield--error {
+  border-bottom: 1px solid #f67a7c;
+}
+.contact-form__textfield--error::placeholder {
+  color: #f67a7c;
+  opacity: 1;
 }
 .contact-form__submit {
   padding: 14px 48px;

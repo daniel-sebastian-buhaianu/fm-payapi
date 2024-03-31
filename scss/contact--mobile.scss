@@ -138,6 +138,12 @@ body {
         &:focus {
             border-bottom: 1px solid #36536B;
         }
+        &-error {
+            font-size: 11px;
+            margin-top: 8px;
+            padding-left: 20px;
+            color: #f67a7c;
+        }
         &--textarea {
             border-top: none;
             border-right: none;
@@ -145,6 +151,13 @@ body {
             resize: none;
             &:focus {
                 outline: none;
+            }
+        }
+        &--error {
+            border-bottom: 1px solid #f67a7c;
+            &::placeholder {
+                color: #f67a7c;
+                opacity: 1;
             }
         }
     }
