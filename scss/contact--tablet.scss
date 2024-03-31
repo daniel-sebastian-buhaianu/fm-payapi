@@ -1,0 +1,122 @@
+.header {
+    padding-bottom: 54px;
+    margin-bottom: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-position: 505px -464px;
+    &__nav {
+        margin-bottom: 75px;
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 64px;
+    &__links {
+        display: flex;
+        margin-right: 84px;
+    }
+    &__link {
+        font-size: 15px;
+        font-weight: bold;
+        color: #657c8f;
+        margin-right: 40px;
+        &:hover {
+            color: #36536B;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    &__call-to-action {
+        @include buttonStyles($padding: 16px 24px);
+    }
+}
+
+.hero {
+    width: 552px;
+}
+
+.main {
+    margin-bottom: 100px;
+    &__content {
+        margin-bottom: 100px;
+    }
+}
+
+.contact-form {
+    max-width: 445px;
+}
+
+.clients {
+    max-width: 541px;
+    &__headline {
+        max-width: 445px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    &__logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.call-to-action {
+    margin-top: 60px;
+    max-width: 445px;
+    padding: 0;
+    &__content {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 445px;
+    }
+    &__headline {
+        margin-bottom: 40px;
+    }
+}
+
+.footer {
+    padding: 30px 40px;
+    background-position: 378px -136px;
+    &__nav {
+        display: flex;
+        max-width: 688px;
+        margin: auto;
+    }
+    &__logo {
+        margin: 0 64px 0 0;
+    }
+    &__links {
+        flex-direction: row;
+        margin: 0 137px 0 0;
+    }
+    &__link {
+        margin: 0 40px 0 0;
+        &:last-of-type {
+            margin: 0;
+        }
+    }
+    &__social-links {
+        align-items: center;
+    }
+}
+
+.demo-form {
+    flex-direction: row;
+    &__item {
+        margin: 0;
+        &:first-of-type .demo-form__input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        &:last-of-type {
+            margin-left: -20px;
+        }
+    }
+}
