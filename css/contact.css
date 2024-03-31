@@ -581,12 +581,30 @@ body {
   .hero {
     width: 730px;
   }
+  .hero__headline {
+    font-size: 56px;
+  }
   .desktop-menu {
     flex-grow: 1;
     justify-content: space-between;
   }
+  .main__content {
+    padding: 0;
+    max-width: 1110px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-form {
+    margin: 0;
+  }
+  .clients {
+    margin: 0;
+  }
   .call-to-action {
     max-width: none;
+    margin-top: 93px;
   }
   .call-to-action__content {
     display: flex;
