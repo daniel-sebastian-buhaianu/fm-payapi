@@ -1,0 +1,67 @@
+.header {
+    padding-bottom: 0;
+    background-size: 949px;
+    background-position: center -663px;
+    &__nav {
+        margin-bottom: 8px;
+    }
+}
+
+.hero {
+    max-width: 507px;
+    &__image {
+        --width: 253.83px;
+    }
+    .demo-form__item:first-of-type {
+        margin-left: 20px;
+    }
+}
+
+.clients {
+    padding: 88px 116px;
+    background-position: center -548px;
+    > * {
+        max-width: 536px;
+    }
+    &__logos {
+        padding-left: 0;
+        padding-right: 0;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 64px;
+    }
+    &__logo {
+        width: auto;
+        margin: auto;
+    }
+    &__headline {
+        margin-bottom: 24px;
+    }
+}
+
+.benefits {
+    padding-top: 40px;
+}
+
+.single-benefit {
+    max-width: 573px;
+    &__img {
+        width: 610px;
+    }
+    &__info {
+        margin-top: -48px;
+        padding: 0;
+    }
+}
+
+.triple-benefit {
+    max-width: 989px;
+    flex-direction: row;
+    padding: 40px;
+    margin-bottom: 0;
+    &__wrapper {
+        margin: 0 10px 0 0;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}

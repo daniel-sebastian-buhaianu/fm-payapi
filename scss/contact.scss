@@ -1,0 +1,11 @@
+@import 'common';
+
+@import 'contact/mobile';
+
+@media (min-width: 768px) {
+    @import 'contact/tablet';
+}
+
+@media (min-width: 1440px) {
+    @import 'contact/desktop';
+}

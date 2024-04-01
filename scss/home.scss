@@ -1,0 +1,11 @@
+@import 'common';
+
+@import 'home/mobile';
+
+@media (min-width: 768px) {
+    @import 'home/tablet';
+}
+
+@media (min-width: 1440px) {
+    @import 'home/desktop';
+}

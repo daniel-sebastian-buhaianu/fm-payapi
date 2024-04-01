@@ -1,0 +1,131 @@
+.header {
+    @include bgImageStyles($position: center -550px);
+    margin-bottom: 80px;
+    &__nav {
+        margin-bottom: 0;
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    &__image {
+        --width: 204.34px;
+        position: relative;
+        width: var(--width);
+        left: calc(var(--width) * 0.06);
+    }
+    &__content {
+        margin-top: -24px;
+    }
+    &__headline {
+        @include headlineStyles();
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 15px;
+        color: #6C8294;
+    }
+    &__link {
+        font-weight: bold;
+        color: #6C8294;
+        &:hover {
+            color: #36536B;
+        }
+    }
+}
+
+.clients {
+    @include bgImageStyles($position: center -602px);
+    padding: 80px 24px;
+    background-color: #1B262F;
+    > * {
+        max-width: 367px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__logos {
+        padding-left: 24px;
+        padding-right: 24px;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-bottom: 56px;
+    }
+    &__logo {
+        width: 100%;
+        height: auto;
+    }
+    &__info {
+        text-align: center;
+    }
+    &__headline {
+        @include headlineStyles($color: #FBFCFE);
+        margin-bottom: 16px;
+    }
+    &__summary {
+        @include summaryStyles($color: #b8bcc0);
+        margin-bottom: 32px;
+    }
+    &__link {
+        @include buttonStyles($backgroundColor: inherit, $hoverBackgroundColor: #FBFCFE, $hoverColor: #1B262F);
+        display: inline-block;
+        border: 1px solid #FBFCFE;
+    }
+}
+
+.benefits {
+    margin-bottom: 80px;
+}
+
+.single-benefit {
+    max-width: 375px;
+    margin: 0 auto 48px auto;
+    &__img {
+        width: 410px;
+    }
+    &__info {
+        padding: 0 24px;
+        text-align: center;
+    }
+    &__headline {
+        @include headlineStyles($fontSize: 36px);
+        margin-bottom: 24px;
+    }
+    &__summary {
+        @include summaryStyles();
+    }
+}
+
+.triple-benefit {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 0 24px;
+    max-width: 375px;
+    margin: 0 auto;
+    &__wrapper {
+        margin-bottom: 48px;
+        text-align: center;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__img {
+        width: auto;
+        margin-bottom: 32px;
+    }
+    &__headline {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-bottom: 16px;
+        color: #36536B;
+    }
+    &__summary {
+        @include summaryStyles($lineHeight: 25px);
+    }
+}

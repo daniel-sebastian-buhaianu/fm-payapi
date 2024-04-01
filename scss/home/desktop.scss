@@ -1,0 +1,87 @@
+.header {
+    margin-bottom: 0;
+    padding: 40px 0 0 0;
+    background-position: 800px -172px;
+    &__nav {
+        margin-bottom: 0;
+    }
+}
+
+.hero {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    &__image {
+        --width: 420px;
+    }
+    &__content {
+        max-width: 546px;
+        text-align: start;
+    }
+    &__headline {
+        font-size: 72px;
+        line-height: 72px;
+        margin-bottom: 32px;
+    }
+    &__text {
+        margin-left: 20px;
+    }
+    .demo-form__item:first-of-type {
+        margin-left: 0;
+    }
+}
+
+.clients {
+    background-position: -235px -359px;
+    padding: 100px 165px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    &__logos {
+        margin: 0;
+        height: 103px;
+    }
+    &__info {
+        margin: 0 48px 0 0;
+        text-align: start;
+    }
+}
+
+.benefits {
+    > * {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+}
+
+.single-benefit {
+    max-width: 1015px;
+    &:nth-child(2) {
+        flex-direction: row-reverse;
+        position: relative;
+        left: 48px;
+        .single-benefit__img {
+            position: relative;
+            left: 90px;
+        }
+    }
+    &__info {
+        text-align: start;
+    }
+}
+
+.triple-benefit {
+    align-items: start;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1178px;
+    justify-content: space-between;
+    &__wrapper {
+        text-align: center;
+        max-width: 350px;
+        margin-right: 0;
+    }
+}

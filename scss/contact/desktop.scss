@@ -1,0 +1,25 @@
+.hero {
+    width: 730px;
+    &__headline {
+        font-size: 56px;
+    }
+}
+
+.main {
+    &__content {
+        padding: 0;
+        max-width: 1110px;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.contact-form {
+    margin: 0;
+}
+
+.clients {
+    margin: 0;
+}
