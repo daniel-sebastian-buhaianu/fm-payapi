@@ -1,0 +1,24 @@
+.hero__headline {
+    text-align: start;
+}
+
+.plans-wrapper {
+    max-width: 1110px;
+}
+
+.plan {
+    text-align: start;
+    &__name {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    &__description {
+        margin-bottom: 8px;
+    }
+    &__price {
+        font-size: 56px;
+    }
+    &__feature {
+        margin-left: 0;
+    }
+}

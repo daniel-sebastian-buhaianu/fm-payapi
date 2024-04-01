@@ -1,0 +1,33 @@
+.hero {
+    max-width: 730px;
+    &__headline {
+        font-size: 56px;
+    }
+}
+
+.main {
+    @include bgImageStyles($position: -520px 200px);
+}
+
+.info {
+    max-width: 920px;
+    margin-bottom: 100px;
+    &__summary {
+        max-width: 635px;
+    }
+}
+
+.picture {
+    margin-bottom: 72px;
+    &__img {
+        max-height: 500px;
+    }
+}
+
+.stats {
+    max-width: 1110px;
+    margin-bottom: 72px;
+    &__item {
+        width: 350px;
+    }
+}

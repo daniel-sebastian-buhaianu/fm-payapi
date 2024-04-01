@@ -90,74 +90,37 @@ body {
     display: none;
 }
 
-.hero__headline {
-    @include headlineStyles();
-    text-align: center;
-}
-
 .main {
     margin-bottom: 80px;
 }
 
-.plans-wrapper {
-    padding: 0 24px;
-    margin-bottom: 80px;
-}
-
-.plan {
-    text-align: center;
-    margin-bottom: 48px;
-    &:last-of-type {
-        margin-bottom: 0;
+.demo-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    &__label {
+        position: absolute;
+        left: -100vw;
     }
-    &__name {
-        font-family: 'DM Serif Display', serif;
-        font-size: 24px;
-        line-height: 40px;
-        color: #BA4270;
-        margin-bottom: 80px;
+    &__input {
+        @include buttonStyles($color: #36536B, $backgroundColor: #FBFCFE, $hoverColor: #36536B, $hoverBackgroundColor: #FBFCFE);
+        width: 100%;
+        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+        &::placeholder {
+            font-family: 'Public Sans', sans-serif;
+            color: #99a7b4;
+            opacity: 1;
+        }
+        &[type="submit"] {
+            box-shadow: none;
+            @include buttonStyles();
+        }
     }
-    &__description {
-        display: none;
-    }
-    &__price {
-        font-family: 'DM Serif Display', serif;
-        font-size: 56px;
-        line-height: 72px;
-        color: #36536B;
-        margin-bottom: 24px;
-    }
-    &__feature-list {
-        border-top: 1px solid #bfcbd5;
-        border-bottom: 1px solid #bfcbd5;
-        padding: 24px 0;
-        margin-bottom: 48px;
-        text-align: start;
-    }
-    &__feature {
-        width: 134px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 16px;
-        line-height: 28px;
-        color: #92a3b2;
-        margin-bottom: 8px;
-        padding-left: 38px;
+    &__item {
+        margin-bottom: 16px;
         &:last-of-type {
             margin-bottom: 0;
         }
-        &--checked {
-            padding-left: 0;
-            color: #36536B;
-            &::before {
-                content: url(../assets/shared/desktop/icon-check.svg);
-                margin-right: 24px;
-            }
-        }
-    }
-    &__call-to-action {
-        @include buttonStyles($color: #36536B, $backgroundColor: none, $hoverColor: #FBFCFE, $hoverBackgroundColor: #36536B);
-        border: 1px solid #36536B;
     }
 }
 
@@ -216,36 +179,6 @@ body {
         }
         &-icon:hover path {
             fill: #DA6D97;
-        }
-    }
-}
-
-.demo-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
-    &__label {
-        position: absolute;
-        left: -100vw;
-    }
-    &__input {
-        @include buttonStyles($color: #36536B, $backgroundColor: #FBFCFE, $hoverColor: #36536B, $hoverBackgroundColor: #FBFCFE);
-        width: 100%;
-        box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-        &::placeholder {
-            font-family: 'Public Sans', sans-serif;
-            color: #99a7b4;
-            opacity: 1;
-        }
-        &[type="submit"] {
-            box-shadow: none;
-            @include buttonStyles();
-        }
-    }
-    &__item {
-        margin-bottom: 16px;
-        &:last-of-type {
-            margin-bottom: 0;
         }
     }
 }

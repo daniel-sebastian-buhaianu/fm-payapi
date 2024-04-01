@@ -1,0 +1,30 @@
+.header {
+    padding-bottom: 54px;
+}
+
+.hero {
+    width: 552px;
+}
+
+.main {
+    &__content {
+        margin-bottom: 100px;
+    }
+}
+
+.contact-form {
+    max-width: 445px;
+}
+
+.clients {
+    max-width: 541px;
+    &__headline {
+        max-width: 445px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    &__logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
